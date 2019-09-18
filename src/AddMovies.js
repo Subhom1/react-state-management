@@ -14,7 +14,7 @@ const AddMovie = () => {
         setPrice(e.target.value);
     }
     const addMovies = (e) => {
-        e.preventDefault();
+        e.preventDefault(); //Prevent browsers from refreshing everytime you add movie
         setMovies(prevMovies => [...prevMovies, { name: name, price: price }]); //...prevMovies <= is a replica of previous object
     }
     return (
